@@ -25,20 +25,3 @@ cart.add(item1);
 console.log(cart.items);
 cart.add(item1);
 console.log(cart.items);
-
-const item2 = new Gadget(555, 'Apple', 'Galaxy S10', 2500, 1);
-cart.add(item2);
-cart.add(item2);
-cart.add(item2);
-
-console.log(cart.items);
-cart.remove(555);
-console.log(cart.items);
-cart.remove(555);
-console.log(cart.items);
-cart.remove(555);
-console.log(cart.items);
-cart.remove(555);
-console.log(cart.items);
-cart.remove(555);
-console.log(cart.items);

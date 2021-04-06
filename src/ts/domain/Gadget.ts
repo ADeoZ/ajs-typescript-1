@@ -7,6 +7,6 @@ export default class Gadget implements Buyable, Countable {
         readonly brand: string,
         readonly name: string,
         readonly price: number,
-        readonly quantity: number,
+        readonly countable: boolean,
     ) { }
 }

@@ -4,7 +4,7 @@ export default class Cart {
     private _items: Buyable[] = [];
 
     add(item: Buyable): void {
-        if(!this._items.find((itemIndex) => itemIndex.id === item.id) || 'quantity' in item) {
+        if(!this._items.find((itemIndex) => itemIndex.id === item.id) || 'countable' in item) {
             this._items.push(item);
         }
     }

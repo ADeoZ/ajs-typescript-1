@@ -1,3 +1,3 @@
 export default interface Countable {
-  readonly quantity: number,
+  readonly countable: boolean,
 }
