@@ -10,11 +10,7 @@ export default class Cart {
     }
 
     sum(): number {
-        let sum:number = 0;
-        for (let item of this._items) {
-            sum += item.price;
-        }
-        return sum;   
+        return this._items.reduce((sum, item) => sum + item.price, 0);
     }
 
     sumDiscount(discount: number): number {
@@ -22,7 +18,7 @@ export default class Cart {
     }
 
     remove(id: number): void {
-        const itemIndex: number = this._items.findIndex((item) => item.id === id);
+        const itemIndex = this._items.findIndex((item) => item.id === id);
         if (itemIndex != -1) {
             this._items.splice(itemIndex, 1);
         }

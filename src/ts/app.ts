@@ -17,7 +17,7 @@ console.log(cart.sumDiscount(30));
 cart.remove(1001);
 console.log(cart.items);
 
-console.clear();
+
 const item1 = new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225);
 cart.add(item1);
 console.log(cart.items);
